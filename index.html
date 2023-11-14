@@ -174,12 +174,12 @@
             
             
 
-        <div data-silex-type="text-element" class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop" data-silex-id="silex-id-1552772425150-3" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1699926096231_303 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1699926096231_303 nav {left: -9999px;}.hamburger-menu_1699926096231_303 nav ul {margin-top: 80px;}.hamburger-menu_1699926096231_303 nav {opacity: 0; position: absolute; background-color: #B4E5E8; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1699926096231_303.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1699926096231_303 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1699926096231_303.open .nav-container {}.hamburger-menu_1699926096231_303 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1699926096231_303 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop" data-silex-id="silex-id-1552772425150-3" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1699930319533_103 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1699930319533_103 nav {left: -9999px;}.hamburger-menu_1699930319533_103 nav ul {margin-top: 80px;}.hamburger-menu_1699930319533_103 nav {opacity: 0; position: absolute; background-color: #B4E5E8; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1699930319533_103.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1699930319533_103 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1699930319533_103.open .nav-container {}.hamburger-menu_1699930319533_103 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1699930319533_103 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1699926096231_303.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1699926096231_303 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1699926096231_303.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1699926096231_303.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1699926096231_303 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1699926096231_303.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1699930319533_103.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1699930319533_103 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1699930319533_103.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1699930319533_103.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1699930319533_103 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1699930319533_103.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1699926096231_303 closed">
+<div class="hamburger-menu_1699930319533_103 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -190,9 +190,9 @@
         <nav class="">
             <ul>
             
-                <li><a href="#!page-home" class="">Home</a></li>
+                <li><a href="#!page-home" class="page-link-active">Home</a></li>
             
-                <li><a href="#!page-contact" class="page-link-active">Contact</a></li>
+                <li><a href="#!page-contact" class="">Contact</a></li>
             
             </ul>
         </nav>
@@ -204,13 +204,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1699926096231_303').classList.remove('open');
-    document.querySelector('.hamburger-menu_1699926096231_303').classList.add('closed');
+    document.querySelector('.hamburger-menu_1699930319533_103').classList.remove('open');
+    document.querySelector('.hamburger-menu_1699930319533_103').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1699926096231_303').classList.add('open');
-    document.querySelector('.hamburger-menu_1699926096231_303').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1699930319533_103').classList.add('open');
+    document.querySelector('.hamburger-menu_1699930319533_103').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -220,7 +220,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1699926096231_303').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1699930319533_103').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -228,23 +228,23 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1699926096231_303 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1699930319533_103 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1699926096231_303 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1699930319533_103 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
   setTimeout(() => scrollOrResize(), 0)
 })();
 </script>
-</div></div><a data-silex-type="image-element" class="editable-style image-element silex-id-1436036524431-29" data-silex-id="silex-id-1436036524431-29" href="#!page-home" style=""><img src="Jordan_Logo.png"></a><div data-silex-type="html-element" class="editable-style html-element silex-id-1699722562374-1" data-silex-id="silex-id-1699722562374-1" style=""><div class="silex-element-content"><a href="https://api.us3.swi-rc.com/integration/integration.php?uid=ozxewGqfG1gOqE9lrpzGXo01dW%2BSdk8uzvTfXqkTd0QV29wTXQwnEDRxQI1L4SFuSpoqGqfDTKoB1KJt5kFsJy8QkqHVZKXAGDO60YESktrldszN4bM%3D"><img src="https://api.us3.swi-rc.com/integration/default.png" border="0" alt="" title=""></a></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1436036522018-5 nav hide-on-mobile" data-silex-id="silex-id-1436036522018-5" style="">
+</div></div><a data-silex-type="image-element" class="editable-style image-element silex-id-1436036524431-29 page-link-active" data-silex-id="silex-id-1436036524431-29" href="#!page-home" style=""><img src="Jordan_Logo.png"></a><div data-silex-type="html-element" class="editable-style html-element silex-id-1699722562374-1" data-silex-id="silex-id-1699722562374-1" style=""><div class="silex-element-content"><a href="https://api.us3.swi-rc.com/integration/integration.php?uid=ozxewGqfG1gOqE9lrpzGXo01dW%2BSdk8uzvTfXqkTd0QV29wTXQwnEDRxQI1L4SFuSpoqGqfDTKoB1KJt5kFsJy8QkqHVZKXAGDO60YESktrldszN4bM%3D"><img src="https://api.us3.swi-rc.com/integration/default.png" border="0" alt="" title=""></a></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1436036522018-5 nav hide-on-mobile" data-silex-id="silex-id-1436036522018-5" style="">
                     <div class="silex-element-content normal"><p>
-                        <a href="#!page-home" class="">HOME</a>
+                        <a href="#!page-home" class="page-link-active">HOME</a>
                     </p></div>
                 </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1436036521917-4 nav hide-on-mobile" data-silex-id="silex-id-1436036521917-4" style="">
                     <div class="silex-element-content normal">
-                        <p><a href="#!page-contact" class="page-link-active">CONTACT</a>
+                        <p><a href="#!page-contact" class="">CONTACT</a>
                     </p></div>
                 </div></div></header><section data-silex-type="container-element" class="container-element editable-style section-element silex-id-1483131242514-19 website-min-width prevent-resizable page-home paged-element" data-silex-id="silex-id-1483131242514-19" style="">
 
@@ -269,7 +269,7 @@
                         <br>
                         
                             </p><p><br></p><p><a href="//disap.org/"></a></p>
-                </div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1538155859204-2 silex-component-form page-contact paged-element" data-silex-id="silex-id-1538155859204-2" title="" style=""><div class="silex-element-content"><form id="id_1699926331059_215" action="https://formspree.io/moi@email.com" method="POST">
+                </div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1538155859204-2 silex-component-form page-contact paged-element" data-silex-id="silex-id-1538155859204-2" title="" style=""><div class="silex-element-content"><form id="id_1699930423441_704" action="https://formspree.io/moi@email.com" method="POST">
   
   <div>
     <label for="field1">Nom</label>
@@ -290,7 +290,7 @@
   
   <input type="submit" value="Envoyer">
 </form>
-<style>#id_1699926331059_215 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1699926331059_215 input[type=submit] {width: 100%; background-color: #B4E5E8; color: #FFFFFF; padding: 14px 20px; margin: 8px 0; border: 1px solid #B4E5E8; border-radius: 3px; cursor: pointer;}#id_1699926331059_215 label {color: #000000;}#id_1699926331059_215 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1699926331059_215 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1699926331059_215 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+<style>#id_1699930423441_704 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1699930423441_704 input[type=submit] {width: 100%; background-color: #B4E5E8; color: #000000; padding: 14px 20px; margin: 8px 0; border: 1px solid #B4E5E8; border-radius: 3px; cursor: pointer;}#id_1699930423441_704 label {color: #ffffff;}#id_1699930423441_704 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1699930423441_704 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1699930423441_704 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
 
 </div></div></div></section><footer data-silex-type="container-element" class="container-element editable-style section-element silex-id-1483130400381-10 website-min-width prevent-resizable" data-silex-id="silex-id-1483130400381-10" style="">
         <footer data-silex-type="container-element" class="editable-style silex-element-content website-width container-element silex-id-1483130400382-11" data-silex-id="silex-id-1483130400382-11" style="">
